@@ -143,7 +143,7 @@
   <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="pixel" />
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pex" />
-  <project path="manifest" name="manifest" remote="rebase" />
+  <project path="manifest" name="manifest" remote="pex" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
   <project path="vendor/aosp" name="vendor_aosp" remote="pex"/>
    <project path="vendor/gapps" name="darkbeast69/vendor_gapps" remote="gitlab" clone-depth="1" revision="eleven" />
