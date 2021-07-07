@@ -30,10 +30,6 @@
   <remote name="pixel-devices-blobs"
           fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
           revision="eleven" />
-  
-  <remote  name="aex"
-           fetch="https://github.com/AospExtended"
-           revision="refs/heads/11.x" />
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
@@ -153,7 +149,7 @@
 
   <!-- Hardware repos -->
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="pixel" />
-  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pex" />
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pixel" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="pixel" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="pixel" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
@@ -232,5 +228,4 @@
    <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="pex" />
    <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="pex" revision="lineage-18.1" />
    <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="pex" />
-   <project path="hardware/aosp/hal" name="platform_hardware_aosp" groups="pdk" remote="aex" /> 
 </manifest>
