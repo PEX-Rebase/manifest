@@ -110,7 +110,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="pixel-plus" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel-plus" />
+  <project path="frameworks/base" name="frameworks_base" remote="pex" revision="eleven-plus" />
   <project path="frameworks/native" name="frameworks_native" remote="pixel-plus" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
@@ -120,7 +120,7 @@
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
   <project path="bionic" name="bionic" remote="pixel" />
-  <project path="build/make" name="build" remote="pixel">
+  <project path="build/make" name="build" remote="pex">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -136,16 +136,16 @@
   <project path="build/blueprint" name="build_blueprint" remote="pixel" />
   <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="pixel" />
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pex" />
   <project path="manifest" name="manifest" remote="pixel-plus" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pixel-plus" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="pex" revision="eleven-plus"/>
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/custom-preference" name="vendor_support" remote="pex" />
 
   <!-- Hardware repos -->
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="pixel" />
-  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pixel" />
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pex" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="pixel" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="pixel" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
@@ -184,7 +184,7 @@
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="pixel" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="pex" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel-plus" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixel" />
   <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="pixel" />
@@ -200,10 +200,12 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="pixel" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="pixel" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi" remote="AOSPA" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="AOSPA" clone-depth="1" />
 
   <!-- System Repos -->
   <project path="system/bt" name="system_bt" remote="pixel" />
-  <project path="system/core" name="system_core" remote="pixel" />
+  <project path="system/core" name="system_core" remote="pex" />
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="pixel" />
   <project path="system/libufdt" name="system_libufdt" remote="pixel" />
   <project path="system/media" name="system_media" remote="pixel" />
@@ -218,4 +220,8 @@
   <!-- Tools Repos -->
   <project path="tools/metalava" name="tools_metalava" remote="pixel" />
 
+   <project path="vendor/overlay" name="vendor_custom_overlay" remote="pex" />
+   <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="pex" />
+   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="pex" revision="lineage-18.1" />
+   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="pex" />
 </manifest>
