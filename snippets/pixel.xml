@@ -33,6 +33,10 @@
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
+  
+  <remote  name="AOSPA"
+           fetch="https://github.com/AOSPA"
+           revision="refs/heads/master" />
 
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
