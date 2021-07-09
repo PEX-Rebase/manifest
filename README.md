@@ -1,11 +1,11 @@
-# Pixel Experience #
+# Pixel Extended #
 
 ### Sync ###
 
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/PixelExperience/manifest -b eleven-plus
+repo init -u https://github.com/PEX-Rebase/manifest -b eleven-plus
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
